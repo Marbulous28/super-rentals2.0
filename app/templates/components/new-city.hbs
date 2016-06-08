@@ -1,0 +1,13 @@
+{{#if addNewCity}}
+<h1>Add New City</h1>
+<form>
+  <label for='city'>Enter a new city:</label>
+  {{input value=city id='city'}}
+
+  <label for='country'>Country:</label>
+  {{input value=country id='country'}}
+</form>
+<button {{action "saveCity"}}>Submit</button>
+{{else}}
+<button {{action "newCityFormShow"}}>New City</button>
+{{/if}}
