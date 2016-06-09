@@ -17,11 +17,6 @@ export default Ember.Component.extend({
       };
       this.set('addNewRental', false);
       this.sendAction('save2', params);
-      this.set('owner', '');
-      this.set('city', '');
-      this.set('type', '');
-      this.set('image', '');
-      this.set('bedrooms', '');
     }
   }
 });
